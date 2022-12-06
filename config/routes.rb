@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  
+  # Mount API
+  namespace :api do
+    get 'water', to: 'water#index'
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # Home page
+  root "home#index"
 end
