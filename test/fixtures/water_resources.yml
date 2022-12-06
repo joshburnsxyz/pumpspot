@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 lake_eildon:
-  category: 6
+  category: 5
   gps_lon: MyString
   gps_lat: MyString
   title: "Lake Eildon"

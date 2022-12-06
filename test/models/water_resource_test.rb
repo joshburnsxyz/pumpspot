@@ -32,4 +32,10 @@ class WaterResourceTest < ActiveSupport::TestCase
     wr.gps_lat = nil
     assert_not wr.save()
   end
+
+  test "should return the correct category" do
+    wr = @wr
+    res = wr.category.encode('utf-8')
+    assert_equal "lake", res
+  end
 end
