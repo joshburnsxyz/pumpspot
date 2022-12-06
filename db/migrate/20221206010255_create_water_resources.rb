@@ -8,8 +8,7 @@ class CreateWaterResources < ActiveRecord::Migration[7.0]
       t.string :designation
       t.float :capacity
       t.boolean :salt_water
-      t.integer :primary_use
-
+      
       t.timestamps
     end
   end

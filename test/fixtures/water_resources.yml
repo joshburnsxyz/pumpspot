@@ -8,14 +8,3 @@ one:
   designation: MyString
   capacity: 1.5
   salt_water: false
-  primary_use: 1
-
-two:
-  category: 1
-  gps_lon: MyString
-  gps_lat: MyString
-  title: MyString
-  designation: MyString
-  capacity: 1.5
-  salt_water: false
-  primary_use: 1
