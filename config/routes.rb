@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # Mount API
   namespace :api do
     get "all", to: "water#index"
-    get "search", to: "water#search"
+    get "category/:category_name", to: "water#category"
   end
 
   # Home page

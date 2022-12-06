@@ -14,7 +14,4 @@ class WaterResource < ApplicationRecord
 
   # Filter by category
   scope :filter_by_category, -> (category) { where category: category }
-
-  # Filter by title content
-  scope :filter_by_starts_with, -> (title) { where("title like ?", "#{title}")}
 end

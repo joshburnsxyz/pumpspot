@@ -7,8 +7,8 @@ module Api
       render json: @wr, status: :ok
     end
 
-    def search
-      @wr = WaterResource.filter_by_starts_with(params["query"])
+    def category
+      @wr = WaterResource.filter_by_category(params[:category_name])
       render json: @wr, status: :ok
     end
   end
