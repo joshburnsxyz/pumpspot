@@ -38,4 +38,10 @@ class WaterResourceTest < ActiveSupport::TestCase
     res = wr.category.encode('utf-8')
     assert_equal "lake", res
   end
+
+  test "should display salt_water as false" do
+    wr = @wr
+    got = wr.salt_water
+    assert_equal false,got
+  end
 end
