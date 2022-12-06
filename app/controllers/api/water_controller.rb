@@ -2,7 +2,8 @@ module Api
   class WaterController < ApplicationController
 
     def index
-      # something cool is probably happening here
+      @wr = WaterResource.all
+      render json: @wr, status: :ok 
     end
 
   end
