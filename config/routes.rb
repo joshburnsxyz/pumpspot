@@ -3,7 +3,8 @@
 Rails.application.routes.draw do
   # Mount API
   namespace :api do
-    get "water", to: "water#index"
+    get "all", to: "water#index"
+    get "search", to: "water#search"
   end
 
   # Home page
