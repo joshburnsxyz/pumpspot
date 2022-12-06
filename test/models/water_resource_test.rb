@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class WaterResourceTest < ActiveSupport::TestCase
@@ -6,7 +8,7 @@ class WaterResourceTest < ActiveSupport::TestCase
   end
 
   test "can save a WaterResource object" do
-    assert @wr.save()  
+    assert @wr.save()
   end
 
   test "will not save WaterResource object without title" do
@@ -35,13 +37,13 @@ class WaterResourceTest < ActiveSupport::TestCase
 
   test "should return the correct category" do
     wr = @wr
-    res = wr.category.encode('utf-8')
+    res = wr.category.encode("utf-8")
     assert_equal "lake", res
   end
 
   test "should display salt_water as false" do
     wr = @wr
     got = wr.salt_water
-    assert_equal false,got
+    assert_equal false, got
   end
 end

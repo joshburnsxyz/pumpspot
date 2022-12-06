@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 json.content format_content(@wr.content)
 json.author do
   json.name "PumpSpot"
