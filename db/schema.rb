@@ -20,8 +20,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_06_010255) do
     t.string "gps_lat"
     t.string "title"
     t.string "designation"
-    t.float "capacity"
     t.boolean "salt_water"
+    t.float "capacity"
+    t.float "area"
+    t.float "surface_elevation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -6,9 +6,11 @@ class CreateWaterResources < ActiveRecord::Migration[7.0]
       t.string :gps_lat
       t.string :title
       t.string :designation
-      t.float :capacity
       t.boolean :salt_water
-      
+      t.float :capacity
+      t.float :area
+      t.float :surface_elevation
+
       t.timestamps
     end
   end
