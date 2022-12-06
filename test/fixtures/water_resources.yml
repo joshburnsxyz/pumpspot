@@ -2,8 +2,8 @@
 
 lake_eildon:
   category: 5
-  gps_lon: MyString
-  gps_lat: MyString
+  gps_lon: "145.916663"
+  gps_lat: "-37.2333324"
   title: "Lake Eildon"
   designation: "PLACEHOLDER"
   salt_water: false
