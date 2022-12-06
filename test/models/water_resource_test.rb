@@ -1,7 +1,35 @@
 require "test_helper"
 
 class WaterResourceTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  setup do
+    @wr = water_resources(:lake_eildon)
+  end
+
+  test "can save a WaterResource object" do
+    assert @wr.save()  
+  end
+
+  test "will not save WaterResource object without title" do
+    wr = @wr
+    wr.title = nil
+    assert_not wr.save()
+  end
+
+  test "will not save WaterResource object without capacity" do
+    wr = @wr
+    wr.capacity = nil
+    assert_not wr.save()
+  end
+
+  test "will not save WaterResource object without gps_lon" do
+    wr = @wr
+    wr.gps_lon = nil
+    assert_not wr.save()
+  end
+
+  test "will not save WaterResource object without gps_lat" do
+    wr = @wr
+    wr.gps_lat = nil
+    assert_not wr.save()
+  end
 end
