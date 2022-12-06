@@ -24,6 +24,17 @@ export default [
     plugins: [
       resolve()
     ]
+  },
+  {
+    input: "app/javascript/markers.js",
+    output: {
+      file: "app/assets/builds/markers.js",
+      format: "es",
+      inlineDynamicImports: true,
+      sourcemap: true
+    },
+    plugins: [
+      resolve()
+    ]
   }
-
 ]

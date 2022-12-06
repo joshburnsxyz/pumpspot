@@ -1,4 +1,13 @@
 %link{:crossorigin => "", :href => "https://unpkg.com/leaflet@1.9.3/dist/leaflet.css", :integrity => "sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=", :rel => "stylesheet"}/
 %script{:crossorigin => "", :integrity => "sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=", :src => "https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"}
 = javascript_include_tag "map", "data-turbo-track": "reload", defer: true
+
+%script
+  var resources =
+  = @wr.to_json.html_safe
+  ;
+  console.log(resources);
+
+= javascript_include_tag "markers", "data-turbo-track": "reload", defer: true
+
 %div#map
