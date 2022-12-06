@@ -1,3 +1,23 @@
 #map {
-    height: 70vh;
+    grid-area: "content";
+    height: 80vh;
+}
+
+#mapwrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "sidebar content";
+}
+
+#mapsidebar {
+    grid-area: "sidebar";
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: 4fr;
+    grid-template-areas:
+      "content"
+      "sidebar";
+  }
 }
