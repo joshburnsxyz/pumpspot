@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     get "category/:category_name", to: "water#category"
   end
 
+  # Maps
+  get 'map', to: "map#index"
+
   # Home page
   root "home#index"
 end
