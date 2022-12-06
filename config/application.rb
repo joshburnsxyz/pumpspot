@@ -25,8 +25,8 @@ module Pumpspot
       g.assets false
       g.helper false
       g.view_specs false
-      g.scaffold_stylesheet
-      g.template_engine :erb
+      g.scaffold_stylesheet false
+      g.template_engine :haml
     end
   end
 end
