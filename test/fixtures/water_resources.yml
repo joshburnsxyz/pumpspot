@@ -1,10 +1,12 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  category: 1
+lake_eildon:
+  category: 6
   gps_lon: MyString
   gps_lat: MyString
-  title: MyString
-  designation: MyString
-  capacity: 1.5
+  title: "Lake Eildon"
+  designation: "PLACEHOLDER"
   salt_water: false
+  capacity: 3334.158
+  area: 138.3
+  surface_elevation: 230.00
