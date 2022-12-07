@@ -23,5 +23,6 @@
       %ul
         - @q.each do |q|
           %li
-            %p= q.title
+            %a{href: "/map?name=#{q.title}"}
+              = q.title
     %div#map
