@@ -16,7 +16,7 @@
       %h3 Filters
       %div
         - WaterResource.categories.each do |i|
-          %a{href: "/map?q=#{i[1]}", class: "filterlink btn btn-primary"}
+          %a{href: "/map?cat=#{i[1]}", class: "filterlink btn btn-primary"}
             = i[0]
       %hr
       %h3 Found These Resources

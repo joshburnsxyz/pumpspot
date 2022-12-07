@@ -1,7 +1,7 @@
 class MapController < ApplicationController
   def index
-    if params["q"] != nil
-      cat = params["q"]
+    if params["cat"] != nil
+      cat = params["cat"]
       @q = WaterResource.filter_by_category(cat)
     else
       @q = WaterResource.all
