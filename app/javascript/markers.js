@@ -1,10 +1,10 @@
-function createMarker(L,lat,lon) {
+function createMarker(name,L,lat,lon) {
   var marker = L.marker([lat,lon]).addTo(map);
-  marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+  marker.bindPopup("<b>"+name+"</b><hr/>Capacity: "+r.capacity+"L");
 }
 
 for (i = 0; i < resources.length; i++) {
   console.log("hi");
   r = resources[i];
-  createMarker(L,r.gps_lat,r.gps_lon);
+  createMarker(r.title,L,r.gps_lat,r.gps_lon);
 }
