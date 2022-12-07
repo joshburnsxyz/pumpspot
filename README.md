@@ -1,24 +1,14 @@
-# README
+# PumpSpot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Searchable interactive map & database of accessable water sources.
+The map shows lakes, rivers, ponds, hydrants, and more. The primary
+intention is to provide the ability to find water when needed to who
+needs it, everything from stranded outdoorsman, to emergency services
+can benifit from PumpSpot.
 
-Things you may want to cover:
+## Tech Stack
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- PostgreSQL 
+- Ruby on Rails
+- Node.js
+- Bootstrap CSS
