@@ -83,5 +83,5 @@ group :test do
 end
 
 gem "haml", "~> 6.0"
-
 gem "haml-rails", "~> 2.1"
+gem "clearance", "~> 2.6"
