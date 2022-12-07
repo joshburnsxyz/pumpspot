@@ -7,7 +7,9 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers/features/ruby:1": {},
+		"ghcr.io/devcontainers/features/ruby:1": {
+			"version": "3.1.1"
+		},
 		"ghcr.io/devcontainers-contrib/features/rollup:1": {}
 	}
 
