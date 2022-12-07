@@ -14,7 +14,7 @@
   %div#mapwrapper
     %div#mapsidebar
       %ul
-        = @q.each do |q|
+        - @q.each do |q|
           %li
-            %p= q
+            %p= q.title
     %div#map
