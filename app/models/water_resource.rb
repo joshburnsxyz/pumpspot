@@ -14,4 +14,7 @@ class WaterResource < ApplicationRecord
 
   # Filter by category
   scope :filter_by_category, -> (category) { where category: category }
+
+  # Filter by name
+  scope :filter_by_name, -> (name) { where name: name }
 end
