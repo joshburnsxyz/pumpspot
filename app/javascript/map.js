@@ -14,7 +14,7 @@ function createMarker(L,r) {
   } else {
     var waterType = "Fresh Water"
   }
-  marker.bindPopup("<b>"+r.title+"</b><hr/>Capacity: "+r.capacity+"L<br/>"+waterType).openPopup();
+  marker.bindPopup("<b>"+r.title+"</b><hr/>Capacity: "+r.capacity+"ML<br/>"+waterType).openPopup();
 }
 
 for (i = 0; i < resources.length; i++) {
