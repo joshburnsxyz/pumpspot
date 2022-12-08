@@ -10,6 +10,6 @@ class MapController < ApplicationController
     else
       @q = WaterResource.all
     end
-    Rails.logger.info("Queried Resource List: #{@q}")
+    Rails.logger.info("Queried Resource List: #{@q.to_json}")
   end
 end
