@@ -18,19 +18,19 @@
         #navbarResponsive.collapse.navbar-collapse
           %ul.navbar-nav.ms-auto
             %li.nav-item
-              %a.nav-link
-                - if signed_in?
-                  = button_to 'Sign Out', sign_out_path, method: :delete
-                - else
-                  = button_to 'Sign In', sign_in_path
+              - if signed_in?
+                = link_to 'Sign Out', sign_out_path, method: :delete, class: "nav-link"
+              - else
+                = link_to 'Sign In', sign_in_path, class: "nav-link"
             = yield :navbar
     / Header
     %main
       #flash
         - flash.each do |key, value|
           %div{:class => "flash #{key}"}= value
-      = yield
+      %div.container
+        = yield
       / Footer
-      %footer.py-5.bg-dark
-        .container.px-4
-          %p.m-0.text-center.text-white Copyright © Your Website 2022
+    %footer.py-5.bg-dark
+      .container.px-4
+        %p.m-0.text-center.text-white Copyright © PumpSpot 2022
