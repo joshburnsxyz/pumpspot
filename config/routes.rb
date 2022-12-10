@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
 
   # Maps
-  get 'map', to: "map#index"
+  get 'map', to: "map#index", as: "map_index"
 
   # Home page
   root "home#index"
