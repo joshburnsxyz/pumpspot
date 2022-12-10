@@ -41,3 +41,12 @@
         %p.m-0.text-center.text-white Copyright © PumpSpot 2022
         %p.m-0.text-center.text-white
           %a{:href => "/developers/open-source"} This site is powered by Open Source
+
+/ Google tag (gtag.js)
+%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=G-XZQG0E4VR6"}
+:javascript
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XZQG0E4VR6');
