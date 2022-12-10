@@ -1,0 +1,18 @@
+-content_for :navbar do
+  %li.nav-item
+    %a.nav-link{:href => "#about"} About
+
+%header.bg-primary.bg-gradient.text-white
+  .container.px-4.text-center
+    %h1.fw-bolder Projects That Power PumpSpot
+    %p.lead PumpSpot is built on and powered by open source projects. Here are the many awesome projects that make our service possible.
+
+/ About section
+%section#about
+  .container.px-4
+    .row.gx-4.justify-content-center
+      .col-lg-8
+        %h2 Hosting & Dev-Ops
+        %ul
+          %li
+            %a{href: "https://github.com"} Github
