@@ -8,6 +8,10 @@
 
 = javascript_include_tag "map", "data-turbo-track": "reload", defer: true
 
+- content_for :navbar do
+  %li.nav-link
+    = link_to "Home", root_path, class: "nav-link"
+
 %section.container
   %div#mapwrapper
     %div#mapsidebar

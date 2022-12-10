@@ -22,6 +22,11 @@
                 = link_to 'Sign Out', sign_out_path, method: :delete, class: "nav-link"
               - else
                 = link_to 'Sign In', sign_in_path, class: "nav-link"
+            - if signed_in?
+              %li.nav-item
+                = link_to 'My Account', '/my_account', class: 'nav-link'
+              %li.nav-item
+                = link_to 'Submit', '/submit', class: 'nav-link'
             = yield :navbar
     / Header
     %main
