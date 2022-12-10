@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # Maps
   get "map", to: "map#index", as: "map_index"
 
-  # Home page
+  # Static Pages
+  get "developers/open-source", to: "home#open_source", as: "open_source_credit"
   root "home#index"
 end
