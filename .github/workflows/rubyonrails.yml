@@ -34,10 +34,10 @@ jobs:
         with:
           bundler-cache: true
       # Add or replace database setup steps here
-      - name: Set up
+      - name: setup
         run: bin/setup
-      - name: Load DB Schema
-        run: bin/rails db:schema:load
+      - name: Compile frontend assets
+        run: bin/rake assets:precompile
       # Add or replace test runners here
       - name: Run tests
         run: bin/rake test
