@@ -17,5 +17,4 @@ test:
 
 production:
   <<: *default
-  password: <%= ENV["PUMPSPOT_DATABASE_PASSWORD"] %>
-  database: pumpspot_prod
+  database_url: <%= ENV.fetch('DATABASE_URL') %>
