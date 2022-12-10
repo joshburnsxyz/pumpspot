@@ -58,6 +58,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "rubocop", "~> 1.39"
   gem "rubocop-rails_config", "~> 1.12"
+  gem "bundler-audit", "~> 0.9.1"
+  gem "brakeman", "~> 5.4"
 end
 
 group :development do
