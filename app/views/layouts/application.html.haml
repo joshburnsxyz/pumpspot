@@ -19,7 +19,7 @@
           %ul.navbar-nav.ms-auto
             %li.nav-item
               - if signed_in?
-                = link_to 'Sign Out', sign_out_path, method: :delete, class: "nav-link"
+                = link_to 'Sign Out', sign_out_path, class: "nav-link", data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'}
               - else
                 = link_to 'Sign In', sign_in_path, class: "nav-link"
             - if signed_in?
@@ -39,3 +39,5 @@
     %footer.py-5.bg-dark
       .container.px-4
         %p.m-0.text-center.text-white Copyright © PumpSpot 2022
+        %p.m-0.text-center.text-white
+          %a{:href => "/developers/open-source"} This site is powered by Open Source
