@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MapController < ApplicationController
   def index
     if params["name"] != nil

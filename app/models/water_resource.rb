@@ -13,8 +13,8 @@ class WaterResource < ApplicationRecord
   validates :surface_elevation, presence: true
 
   # Filter by category
-  scope :filter_by_category, -> (category) { where category: category }
+  scope :filter_by_category, -> (category) { where(category:) }
 
   # Filter by name
-  scope :filter_by_name, -> (name) { where name: name }
+  scope :filter_by_name, -> (name) { where name: }
 end
