@@ -1,6 +1,8 @@
 -content_for :navbar do
   %li.nav-item
     %a.nav-link{:href => "#about"} About
+  %li.nav-item
+    %a.nav-link{:href => "#support"} Support Us
 
 %header.bg-primary.bg-gradient.text-white
   .container.px-4.text-center
@@ -17,3 +19,17 @@
         %p.lead PumpSpot provides a map marked with the locations of over /insert number here/ tappable water resources.
         %ul
           %li Click the button above to open the map
+%section#support
+  .container.px-4
+    .row.gx-4.justify-content-center
+      .col-lg-8
+        %h2 Support The Project
+        %p.lead Here are some various ways to support the project.
+        %ul
+          %li
+            %a{href: "/submit"} Submit |
+            a resource to the database, we are always looking for help.
+          %li
+            %a{href: "https://github.com/joshburnsxyz/pumpspot"} Contribute |
+            to the project on Github
+          %li Monetary donations (information to come)
