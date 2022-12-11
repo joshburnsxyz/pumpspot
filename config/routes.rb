@@ -3,6 +3,7 @@
 Rails.application.routes.draw do
   # Mount API
   namespace :api do
+    get "healthcheck", to: "healthcheck#index", as: "healthcheck"
     get "all", to: "water#index"
     get "category/:category_name", to: "water#category"
   end
