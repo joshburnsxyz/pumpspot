@@ -6,7 +6,4 @@ class HomeController < ApplicationController
 
   def open_source
   end
-
-  def submit
-  end
 end

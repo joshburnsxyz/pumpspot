@@ -12,6 +12,5 @@ Rails.application.routes.draw do
 
   # Static Pages
   get "developers/open-source", to: "home#open_source", as: "open_source_credit"
-  get "submit", to: "home#submit", as: "submit"
   root "home#index"
 end
