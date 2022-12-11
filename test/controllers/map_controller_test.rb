@@ -7,4 +7,15 @@ class MapControllerTest < ActionDispatch::IntegrationTest
     get map_index_url
     assert_response :success
   end
+
+  test "should return a set of results for the map filtered by category" do
+    get "#{map_index_url}?cat=Lake"
+    assert_response :success
+  end
+
+  test "should return a set of results for the map filtered by name" do
+    get "#{map_index_url}?name=Lake"
+    assert_response :success
+  end
+
 end
