@@ -17,5 +17,4 @@ class MapControllerTest < ActionDispatch::IntegrationTest
     get "#{map_index_url}?name=Lake"
     assert_response :success
   end
-
 end
