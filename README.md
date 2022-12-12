@@ -15,3 +15,12 @@ can benifit from PumpSpot.
 - Ruby on Rails
 - Node.js
 - Bootstrap CSS
+
+## Project Status
+
+This project is currently under-development and I am working to build a pipeline to get as much data
+as I can into the database. The current plan is to build a new repo of YAML files that will be used 
+to seed the database via `bin/rake db:seed`.
+
+I welcome anyone who wishes to donate their time and effort to the project, In particular the data
+compilation side of things.
