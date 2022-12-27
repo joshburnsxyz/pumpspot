@@ -4,6 +4,11 @@
   %li.nav-item
     %a.nav-link{:href => "#support"} Support Us
 
+-content_for :alert do
+  %div.alert.alert-warning
+    %p
+      IMPORTANT NOTICE: PumpSpot is a new FOSS project, just trying to get off the ground. We need your help. The site is currently lacking (severely) in data and we need community efforts to populate the database. A document will drafted soon to outline a proper process to submit records to the database. For now a pull request on Github is the way to go.
+
 %header.bg-primary.bg-gradient.text-white
   .container.px-4.text-center
     %h1.fw-bolder PumpSpot
