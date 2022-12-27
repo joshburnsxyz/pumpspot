@@ -10,14 +10,3 @@ lake_eildon:
   capacity: 3334.158
   area: 138.3
   surface_elevation: 230.00
-
-hydrant:
-  category: 7
-  gps_lon: "145.103280"
-  gps_lat: "-37.971780"
-  title: "Hydrant (2 Federation Way)"
-  designation: "PLACEHOLDER"
-  salt_water: false
-  capacity: 0
-  area: 0
-  surface_elevation: 0
